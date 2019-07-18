@@ -104,18 +104,19 @@ class MyApp extends StatelessWidget {
         ),
         body: new Padding(
           padding: EdgeInsets.all(10.0),
-          child: Column(
-            children: <Widget>[
-              _cpf(),
-              _onlyLetters(),
-              _alphaNumeric(),
-              _anyChar(),
-              _moneyDefault(),
-              _moneyCustomized()
-            ],
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                _cpf(),
+                _onlyLetters(),
+                _alphaNumeric(),
+                _anyChar(),
+                _moneyDefault(),
+                _moneyCustomized()
+              ],
+            ),
           ),
-        )
-        ,
+        ),
       ),
     );
   }
